@@ -1,4 +1,4 @@
-l = ['1 -1 2 -2 3 -3 4 -4 5 -5']
+l = '1 -1 2 -2 3 -3 4 -4 5 -5'
 f3 = open('data_3.txt', 'w')
 f3.writelines(l)
 f3.close()
@@ -9,8 +9,7 @@ f4.close()
 f3 = open('data_3.txt')
 k = f3.read()
 k = k.split()
-n = k
-n.sort(key=None, reverse=True)
+n = l.split()
 inmax = n
 for i in range(len(k)):
     k[i] = int(k[i])
