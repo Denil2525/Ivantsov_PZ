@@ -10,17 +10,23 @@ f3 = open('data_3.txt')
 k = f3.read()
 k = k.split()
 n = l.split()
-inmax = n
+inmax = k
 for i in range(len(k)):
     k[i] = int(k[i])
 f3.close()
 f3 = open('data_3.txt')
-inmax, t = 0, 0
+t = 0
 for i in range(len(k)):
     if k[i] < 0:
         t += 1
+f3.close()
+f1 = open('text18-9.txt')
+l2 = f1.readlines()
+l2[0], l2[3] = l2[3], l2[0]
+f1.close()
 f4 = open('data_4.txt', 'a')
 f4.write('\n')
 print('Количество элементов:', len(k), file=f4)
-print('Индекс последнего максимального элемента:', inmax, file=f4)
+print('Индекс последнего максимального элемента:', inmax.index(max(inmax)), file=f4)
+print('Меняем местами первую и последнюю трети:', f1, file=f4)
 f4.close()
