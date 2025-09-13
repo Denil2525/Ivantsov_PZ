@@ -118,3 +118,5 @@ main_frame.columnconfigure(1, weight=1)
 
 # Запуск главного цикла
 root.mainloop()
+
+
