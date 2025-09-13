@@ -1,6 +1,5 @@
 import string
 
-# Исходная строка
 text = 'In PyCharm, you can specify third-party standalone applications and run them as External Tools'
 
 # Функциональный подход с использованием библиотеки string
